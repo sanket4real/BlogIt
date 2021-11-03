@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/tingle.js@0.15.2/dist/tingle.min.css"
+		/>
+		<link rel="stylesheet" href="./dist/css/style.min.css" />
+		<title>Blogs</title>
+	</head>
+	<body class="">
+		<div class="spinner">
+			<img src="./assets/Rolling-1s-200px.svg" alt="" />
+		</div>
+		<nav>
+			<h1>All blogs</h1>
+			<div class="blog-setting">
+				<select name="sort" id="sort" onchange="handleSelectChange(event)">
+					<option value="" disabled selected>Sort by Likes</option>
+					<option value="low">Likes Low to High</option>
+					<option value="high">Likes High to Low</option>
+				</select>
+				<a href="/create.html">Add n new blog</a>
+			</div>
+		</nav>
+
+		<div class="blogs"></div>
+		<div class="details"></div>
+		<button></button>
+		<script src="https://cdn.jsdelivr.net/npm/tingle.js@0.15.2/dist/tingle.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="./js/details.js"></script>
+	</body>
+</html>
